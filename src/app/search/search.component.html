@@ -1,0 +1,16 @@
+<div>
+    <input id="search" #searchBox placeholder="search here" />
+    <button (click)="onSearch(searchBox.value)">search</button>
+</div>
+<div>
+    <ul>
+        <li *ngFor="let book of bookList">
+            <button>
+                <p>{{book.volumeInfo.title}}</p>
+                <div *ngIf="book.volumeInfo.imageLinks">
+                    <img src="{{book.volumeInfo.imageLinks.thumbnail}}" width="200" height="300">
+                </div>
+            </button>
+        </li>
+    </ul>
+</div>

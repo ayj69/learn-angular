@@ -1,0 +1,20 @@
+div{
+    background-color: aliceblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: baseline;
+
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    flex:auto;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: baseline;
+
+
+}
