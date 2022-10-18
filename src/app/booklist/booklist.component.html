@@ -4,3 +4,16 @@
     <p>book title</p>
     <!---make it a list--->
 </div>
+
+<div>
+    <ul>
+        <li *ngFor="let book of bookList">
+            <button>
+                <p>{{book.volumeInfo.title }}</p>
+                <div *ngIf="book.volumeInfo.imageLinks">
+                    <img src="{{book.volumeInfo.imageLinks.thumbnail}}" width="100" height="150">
+                </div>
+            </button>
+        </li>
+    </ul>
+</div>
